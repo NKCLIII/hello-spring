@@ -56,7 +56,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M4</version>
 				<configuration>
-					<useSystemClassLoader>false</useSystemClassLoader>
+<!--					<useSystemClassLoader>false</useSystemClassLoader>-->
 					<forkCount>0</forkCount>
 <!--					<forkCount>2C</forkCount>-->
 <!--					<reuseForks>true</reuseForks>-->

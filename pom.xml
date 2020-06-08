@@ -55,12 +55,19 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M4</version>
-				<configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.junit.jupiter</groupId>
+						<artifactId>junit-jupiter-engine</artifactId>
+						<version>5.7.0-M1</version>
+					</dependency>
+				</dependencies>
+<!--				<configuration>-->
 <!--					<useSystemClassLoader>false</useSystemClassLoader>-->
-					<forkCount>0</forkCount>
+<!--					<forkCount>0</forkCount>-->
 <!--					<forkCount>2C</forkCount>-->
 <!--					<reuseForks>true</reuseForks>-->
-				</configuration>
+<!--				</configuration>-->
 			</plugin>
 		</plugins>
 	</build>

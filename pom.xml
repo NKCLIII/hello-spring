@@ -19,6 +19,9 @@
 	</properties>
 
 	<dependencies>
+		<!-- spring-boot-starter-webflux lets us run the application in
+		     "exploded" form. It let us run via an embedded application server: -->
+		<!-- RUN COMMAND: mvn spring-boot:run-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webflux</artifactId>
@@ -52,6 +55,11 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M4</version>
+				<configuration>
+					<useSystemClassLoader>false</useSystemClassLoader>
+<!--					<forkCount>2C</forkCount>-->
+<!--					<reuseForks>true</reuseForks>-->
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

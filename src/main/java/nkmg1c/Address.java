@@ -18,7 +18,7 @@ class Address implements ApplicationContextAware {
     }
 
     @Override
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+    public void setApplicationContext(ApplicationContext applicationContext){
         this.appId = applicationContext.getId();
     }
 
